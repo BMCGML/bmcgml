@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BMCGML - Bro Might Code</title>
+  <meta name="description" content="BMCGML (Bro Might Code Game Maker Language)" />
+  <style>
+    :root{--bg:#031a03;--card:#041f04;--muted:#6fa86f;--accent:#00ff66}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#000800 0%,#001500 100%);color:#e6eef6;line-height:1.45}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:52px;height:52px;display:inline-grid;place-items:center;border-radius:10px;background:linear-gradient(135deg,#0ea5e9,#7dd3fc);color:#042028;font-weight:700}
+    .brand h1{font-size:18px;margin:0}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-weight:600}
+    main{display:grid;grid-template-columns:1fr;gap:24px}
+    .hero{display:grid;grid-template-columns:1fr;gap:16px;padding:28px;background:transparent;border-radius:12px}
+    .hero h2{margin:0;font-size:28px}
+    .hero p{margin:0;color:var(--muted)}
+    .cta{margin-top:12px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:#042028;font-weight:700;text-decoration:none}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{background:transparent;padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .card h3{margin:0 0 8px 0}
+    .muted{color:var(--muted)}
+    footer{margin-top:24px;padding:12px;color:var(--muted);text-align:center}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .tag{padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.02);font-size:13px}
+    /* small form */
+    form{display:flex;flex-direction:column;gap:8px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);color:inherit;padding:10px;border-radius:8px}
+    textarea{min-height:100px}
+    @media(min-width:860px){main{grid-template-columns:2fr 1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img class="logo" src="Untitled31_20251009151935.png" alt="BMCs awsome logo by azzy" />
+        <div>
+          <h1>BMCGML</h1>
+          <div class="muted">"Shit to the power of two" - a bro who might code idfk anymore (logo by azzy)</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="hero">
+          <div>
+            <h2>Hiya — Im BMCGML :></h2>
+            <p class="muted">Im a self taught programer and i have no idea of what im doing but it works :3</p>
+            <div class="tags">
+              <div class="tag">Python</div>
+              <div class="tag">GameMaker</div>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="projects" style="margin-top:18px">Featured projects</h3>
+        <div class="grid">
+          <article class="card">
+            <h3>NWT - Python Network Bruteforcing Tool</h3>
+            <p class="muted">A legal‑lab‑only Python network testing tool featuring authentication stress tests and protocol analysis.</p>
+            <div style="margin-top:10px"><a href="https://github.com/BMCGML/NTW" class="muted">View repo</a></div>
+          </article>
+
+
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3 id="about">About</h3>
+          <p class="muted">BMCGML stands for "Bro Might Code" cuz uhh... bro might code?</p>
+        </div>
+
+        
+      </aside>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> BMCGML - Bro Might Code</div>
+      <small class="muted">Made with Hopes and dreams (see what i did there?)</small>
+    </footer>
+  </div>
+</body>
+</html>
